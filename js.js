@@ -22,8 +22,7 @@ var timer = setInterval(() => {
 
 $('.window').on('mouseenter', function() {
     window.clearInterval(timer)
-    console.log('shubiaoyuru');
-})
+  })
 
 $('.window').on('mouseleave',function(){
     timer = setInterval(() => {
