@@ -1,0 +1,17 @@
+.images{
+    display: flex;
+    border: 1px solid purple;
+    align-items: flex-start;
+    transition: transform 0.5s;
+}
+.outer{
+    border:1px solid blue;
+    width:500px;
+    overflow:hidden;
+}
+.outer .images img{
+    width:500px;
+}
+.red{
+    color:deeppink;
+}
