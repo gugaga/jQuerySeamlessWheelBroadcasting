@@ -20,11 +20,11 @@ var timer = setInterval(() => {
     allButtons.eq(s%size).trigger('click').addClass('red').siblings('.red').removeClass('red');
 },2000);
 
-$('.window').on('mouseenter', function() {
+$('.outer').on('mouseenter', function() {
     window.clearInterval(timer)
   })
 
-$('.window').on('mouseleave',function(){
+$('.outer').on('mouseleave',function(){
     timer = setInterval(() => {
         s += 1;
         allButtons.eq(s%size).trigger('click').addClass('red').siblings('.red').removeClass('red');
